@@ -22,7 +22,7 @@ class ConvertWidgetToImage {
     final logoImage = await loadLocalImage();
     ImagePainter(image)..paint(canvas, Size.infinite);
     // ロゴを追加する
-    ImagePainter(image, logo: logoImage)..paint(canvas, Size.infinite);
+    // ImagePainter(image, logo: logoImage)..paint(canvas, Size.infinite);
     print(image.width);
     print(image.height);
     final ui.Image renderImage = await recorder.endRecording().toImage(
