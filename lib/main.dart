@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_to_image/pages/normal.dart';
+import 'package:widget_to_image/pages/wrap_children.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,6 +34,16 @@ class HomePage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) => NormalPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('WrapChildrenPage'),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => WrapChildrenPage(),
                 ),
               );
             },
